@@ -15,10 +15,7 @@ def pin_setup():
     setup_led_pin_out(led)
 
 def entry_valid(text):
-    if len(text) <= 12:
-        return True
-    else:
-        return False
+    return len(text) <= 12
 
 def translate_text():
     text = entry_content.get()
